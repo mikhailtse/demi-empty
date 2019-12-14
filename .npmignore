@@ -1,0 +1,4 @@
+.eslintrc
+.gitignore
+.npmignore
+src/__tests__/**
