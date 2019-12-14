@@ -15,9 +15,9 @@ jobs:
       with:
         version: 10.x
 
-      - name: npm install
+    - name: npm install
       run: npm install
 
-      - name: npm test
+    - name: npm test
       run: npm test
 
