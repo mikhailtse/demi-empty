@@ -44,8 +44,5 @@
     "dist",
     "LICENSE",
     "README.md"
-  ],
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
-  }
+  ]
 }
