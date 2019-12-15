@@ -40,5 +40,9 @@
       "<rootDir>/src/__tests__/utils.js"
     ]
   },
-  "files": ["dist", "LICENSE", "README.md"]
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
 }
