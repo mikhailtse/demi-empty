@@ -88,6 +88,19 @@ empty.funcReturnsNull(true);
 // null
 ```
 
+### funcReturnsPromiseOfArg
+
+A function that returns a promise of the first argument.
+
+```javascript
+empty.funcReturnsPromiseOfArg().then(data => console.log(data));
+// undefined
+empty.funcReturnsPromiseOfArg('a').then(data => console.log(data));
+// 'a'
+empty.funcReturnsPromiseOfArg(true).then(data => console.log(data));
+// true
+```
+
 ### funcReturnsPromiseOfNull
 
 A function that returns a promise of `null`.
