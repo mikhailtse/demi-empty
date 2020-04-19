@@ -1,4 +1,5 @@
-const funcReturns = require('../funcReturns');
+import funcReturns from '../funcReturns';
+
 
 test('funcReturns is a function', function() {
     expect({}.toString.call(funcReturns)).toBe('[object Function]');

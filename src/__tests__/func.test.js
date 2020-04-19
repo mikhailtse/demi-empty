@@ -1,5 +1,6 @@
-const func = require('../func');
-const funcToCompare = require('../func');
+import func from '../func';
+import funcToCompare from '../func';
+
 
 test('func is a function', function() {
     expect({}.toString.call(func)).toBe('[object Function]');

@@ -1,5 +1,9 @@
-module.exports = require('./funcReturns')(null);
+import funcReturns from './funcReturns';
+
+const funcReturnsNull = funcReturns(null);
 
 if ('production' !== process.env.NODE_ENV) {
-    Object.freeze(module.exports);
+    Object.freeze(funcReturnsNull);
 }
+
+export default funcReturnsNull;

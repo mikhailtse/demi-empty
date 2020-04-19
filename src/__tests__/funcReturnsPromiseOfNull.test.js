@@ -1,7 +1,8 @@
-const funcReturnsPromiseOfNull = require('../funcReturnsPromiseOfNull');
-const funcReturnsPromiseOfNullToCompare = require('../funcReturnsPromiseOfNull');
+import funcReturnsPromiseOfNull from '../funcReturnsPromiseOfNull';
+import funcReturnsPromiseOfNullToCompare from '../funcReturnsPromiseOfNull';
 
-const isPromise = require('./utils').isPromise;
+import { isPromise } from './utils';
+
 
 test('funcReturnsPromiseOfNull is a function', function() {
     expect({}.toString.call(funcReturnsPromiseOfNull)).toBe('[object Function]');

@@ -1,5 +1,6 @@
-const array = require('../array');
-const arrayToCompare = require('../array');
+import array from '../array';
+import arrayToCompare from '../array';
+
 
 test('array is an array', function() {
     expect(Array.isArray(array)).toBe(true);

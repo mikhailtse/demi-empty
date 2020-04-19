@@ -1,9 +1,11 @@
-module.exports = function(arg) {
+const funcReturns = function(arg) {
     return function() {
         return arg;
     };
 };
 
 if ('production' !== process.env.NODE_ENV) {
-    Object.freeze(module.exports);
+    Object.freeze(funcReturns);
 }
+
+export default funcReturns;

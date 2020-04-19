@@ -1,6 +1,6 @@
 {
     "env": {
-        "amd": true // defines require() and define() as global variables as per the amd spec. 
+        "es6": true
     },
     "parserOptions": {
         "ecmaFeatures": {
@@ -8,7 +8,7 @@
             "objectLiteralDuplicateProperties": false
         },
         "sourceType": "module",
-        "ecmaVersion": 2015,
+        "ecmaVersion": 6,
         "allowImportExportEverywhere": true
     },
     "rules": {

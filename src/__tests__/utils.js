@@ -1,11 +1,11 @@
-exports.isPromise = function isPromise(arg) {
+export function isPromise(arg) {
     return typeof arg.then == 'function';
-};
+}
 
-exports.isObject = function isObject(arg) {
+export function isObject(arg) {
     return typeof arg === 'object' && arg !== null;
-};
+}
 
-exports.isEmptyObject = function isEmptyObject(arg) {
+export function isEmptyObject(arg) {
     return Object.keys(arg).length === 0 && arg.constructor === Object;
-};
+}

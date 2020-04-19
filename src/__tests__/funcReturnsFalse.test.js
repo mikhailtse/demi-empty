@@ -1,5 +1,6 @@
-const funcReturnsFalse = require('../funcReturnsFalse');
-const funcReturnsFalseToCompare = require('../funcReturnsFalse');
+import funcReturnsFalse from '../funcReturnsFalse';
+import funcReturnsFalseToCompare from '../funcReturnsFalse';
+
 
 test('funcReturnsFalse is a function', function() {
     expect({}.toString.call(funcReturnsFalse)).toBe('[object Function]');

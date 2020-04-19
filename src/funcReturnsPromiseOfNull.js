@@ -1,7 +1,10 @@
-const promiseOfNull = require('./promiseOfNull');
+import funcReturns from './funcReturns';
+import promiseOfNull from './promiseOfNull';
 
-module.exports = require('./funcReturns')(promiseOfNull);
+const funcReturnsPromiseOfNull = funcReturns(promiseOfNull);
 
 if ('production' !== process.env.NODE_ENV) {
-    Object.freeze(module.exports);
+    Object.freeze(funcReturnsPromiseOfNull);
 }
+
+export default funcReturnsPromiseOfNull;

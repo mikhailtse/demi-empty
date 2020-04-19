@@ -1,8 +1,8 @@
-const object = require('../object');
-const objectToCompare = require('../object');
+import object from '../object';
+import objectToCompare from '../object';
 
-const isObject = require('./utils').isObject;
-const isEmptyObject = require('./utils').isEmptyObject;
+import { isObject, isEmptyObject } from './utils';
+
 
 test('object is an object', function() {
     expect(isObject(object)).toBe(true);

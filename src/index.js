@@ -1,15 +1,31 @@
-exports.array = require('./array');
-exports.func = require('./func');
-exports.funcReturnsArg = require('./funcReturnsArg');
-exports.funcReturnsArgs = require('./funcReturnsArgs');
-exports.funcReturnsFalse = require('./funcReturnsFalse');
-exports.funcReturnsNull = require('./funcReturnsNull');
-exports.funcReturnsPromiseOfNull = require('./funcReturnsPromiseOfNull');
-exports.funcReturnsThis = require('./funcReturnsThis');
-exports.funcReturnsTrue = require('./funcReturnsTrue');
-exports.object = require('./object');
-exports.promiseOfNull = require('./promiseOfNull');
+export { default as array } from './array';
+export { default as func } from './func';
+export { default as funcReturnsArg } from './funcReturnsArg';
+export { default as funcReturnsArgs } from './funcReturnsArgs';
+export { default as funcReturnsFalse } from './funcReturnsFalse';
+export { default as funcReturnsNull } from './funcReturnsNull';
+export { default as funcReturnsPromiseOfNull } from './funcReturnsPromiseOfNull';
+export { default as funcReturnsThis } from './funcReturnsThis';
+export { default as funcReturnsTrue } from './funcReturnsTrue';
+export { default as object } from './object';
+export { default as promiseOfNull } from './promiseOfNull';
+
+const empty = {
+    array,
+    func,
+    funcReturnsArg,
+    funcReturnsArgs,
+    funcReturnsFalse,
+    funcReturnsNull,
+    funcReturnsPromiseOfNull,
+    funcReturnsThis,
+    funcReturnsTrue,
+    object,
+    promiseOfNull,
+};
 
 if ('production' !== process.env.NODE_ENV) {
-    Object.freeze(exports);
+    Object.freeze(empty);
 }
+
+export default empty;

@@ -1,7 +1,8 @@
-const promiseOfNull = require('../promiseOfNull');
-const promiseOfNullToCompare = require('../promiseOfNull');
+import promiseOfNull from '../promiseOfNull';
+import promiseOfNullToCompare from '../promiseOfNull';
 
-const isPromise = require('./utils').isPromise;
+import { isPromise } from './utils';
+
 
 test('promiseOfNull is a promise', function() {
     expect(isPromise(promiseOfNull)).toBe(true);

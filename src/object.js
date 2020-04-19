@@ -1,5 +1,7 @@
-module.exports = {};
+const object = {};
 
 if ('production' !== process.env.NODE_ENV) {
-    Object.freeze(module.exports);
+    Object.freeze(object);
 }
+
+export default object;
