@@ -15,10 +15,6 @@ npm install demi-empty
 ## Usage
 
 ```javascript
-var empty = require('demi-empty');
-```
-or
-```javascript
 import empty from 'demi-empty';
 ```
 
